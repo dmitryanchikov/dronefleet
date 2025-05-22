@@ -36,6 +36,7 @@ drone-getting-started/
 │   └── drone_control/
 │       ├── __init__.py
 │       ├── msp_telemetry.py  # Чтение телеметрии через MSP протокол
+│       ├── pymultiwii_telemetry.py  # Демонстрационный файл для Pluto Drone
 │       └── README.md
 ├── .gitignore
 ├── env.example
@@ -53,6 +54,19 @@ drone-getting-started/
    ```bash
    python -m drone_control.msp_telemetry
    ```
+
+## Реализации
+
+Проект содержит две реализации:
+
+1. **msp_telemetry.py** - основная реализация для дронов с Betaflight через USB
+   - Использует собственную реализацию протокола MSP
+   - Работает с любыми полетными контроллерами, поддерживающими MSP
+
+2. **pymultiwii_telemetry.py** - демонстрационная реализация для Pluto Drone
+   - Работает через TCP/IP соединение, а не USB
+   - Предназначена только для Pluto Drone
+   - Не подходит для стандартных дронов с Betaflight через USB
 
 ## Возможности
 

@@ -4,9 +4,9 @@ version = "0.1.0"
 description = "Программа для управления дроном"
 requires-python = ">=3.8"
 dependencies = [
-    "pymultiwii>=0.4.4",
     "pyserial==3.5",
-    "python-dotenv==1.0.0"
+    "python-dotenv==1.0.0",
+    "pymultiwii>=0.4.4"
 ]
 
 [build-system]
